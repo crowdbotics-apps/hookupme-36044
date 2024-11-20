@@ -23,6 +23,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+ARG SECRET_KEY
+
 # Set working directory
 WORKDIR /opt/webapp
 
